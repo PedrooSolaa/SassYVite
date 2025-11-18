@@ -1,0 +1,44 @@
+
+// Colores
+$colores-acento-gris: #7f6868;
+$colores-primario-azul: #0501fe;
+$colores-secundario-morado: #75046d;
+$colores-secundario-verde: #086402;
+
+// Espaciados y tamaños
+$radio-peso: 0.625rem;
+$font-height-texto: 2.5rem;
+$font-size-encabezado: 1.75rem;
+$font-size-nombre-colores: 2rem;
+$font-size-texto-normal: 2rem;
+$tamaño: 2.8125rem;
+
+// Fuentes (usa nombre de fuente o fallbacks)
+$font-family-encabezado: 'Jacques Francois', serif;
+$font-family-nombre-colores: 'Itim', cursive;
+$font-family-texto-normal: 'Joan', serif;
+
+// Variables CSS como fallback (si usas :root en CSS)
+:root {
+  --colores-acento-gris: #7f6868;
+  --colores-primario-azul: #0501fe;
+  --colores-secundario-morado: #75046d;
+  --colores-secundario-verde: #086402;
+  --radio-peso: 0.625rem;
+  --font-height-texto: 2.5rem;
+  --font-size-encabezado: 1.75rem;
+  --font-size-nombre-colores: 2rem;
+  --font-size-texto-normal: 2rem;
+  --font-family-encabezado: 'Jacques Francois', serif;
+  --font-family-nombre-colores: 'Itim', cursive;
+  --font-family-texto-normal: 'Joan', serif;
+  --tamaño: 2.8125rem;
+  --color-fondo: #ffffff;
+  --color-texto: #333333;
+  --color-texto-claro: #ffffff;
+  --max-width-container: 900px;
+  --base-spacing: 1rem;
+  --header-primary-bg: #75046d;
+  --header-secondary-bg: #8b7575;
+  --footer-bg: #8b7575;
+}

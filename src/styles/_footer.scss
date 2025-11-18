@@ -1,0 +1,35 @@
+@use "global" as *;
+footer {
+  background: var(--footer-bg);
+  padding: calc(var(--base-spacing) * 2.5) calc(var(--base-spacing) * 3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: calc(var(--tamaño) * 1.5);
+  height: calc(var(--tamaño) * 1.5);
+  background: var(--color-fondo);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.footer-logo img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.social-icons {
+  display: flex;
+  gap: var(--base-spacing);
+  font-size: var(--font-size-nombre-colores);
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
