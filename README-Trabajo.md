@@ -9,6 +9,6 @@ Este proyecto consiste en crear una página web responsive utilizando **SASS** y
 
 ## 2. Enlaces de interés
 
-[Enlace a la página desplegada en GitHub Pages](https://tuusuario.github.io/tu-repositorio/)
+[Enlace a la página desplegada en GitHub Pages](https://github.com/PedrooSolaa/SassYVite)
 
 [Chuleta para hacer markdown](https://www.markdownguide.org/cheat-sheet/)
