@@ -15,10 +15,9 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 0 20px; /* quitar padding superior para que el contenedor pueda estar pegado arriba */
-            overflow: hidden; /* evitar barra de scroll en la página */
-            -ms-overflow-style: none; /* IE/Edge */
-            scrollbar-width: none; /* Firefox */
+            padding: 0 20px; 
+            overflow: hidden; 
+            -ms-overflow-style: none; 
         }
 
         .container {
@@ -36,10 +35,9 @@
             transform: translateX(-50%);
             margin-top: 0;
             z-index: 999;
-            max-height: calc(100vh); /* ocupar hasta la ventana completa */
-            overflow: auto; /* permitir scroll interno si hace falta */
-            -ms-overflow-style: none; /* IE/Edge */
-            scrollbar-width: none; /* Firefox */
+            max-height: calc(100vh); 
+            overflow: auto; 
+            -ms-overflow-style: none; 
         }
 
         /* ocultar scrollbars visuales */
@@ -149,7 +147,7 @@
         @media (max-width: 640px) {
             .container {
                 padding: 30px 25px;
-                position: relative; /* en móvil no lo fijamos a la ventana */
+                position: relative;
                 transform: none;
                 left: auto;
                 top: auto;

@@ -1,14 +1,13 @@
 @use "global" as *;
 
-/* Reset para que no haya márgenes del navegador y el hero pueda ocupar todo */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* evitar margen/scroll horizontal no deseado */
+  overflow-x: hidden; 
 }
 
-/* Quitar subrayado por defecto en enlaces y mantener color heredado */
+
 a {
   text-decoration: none;
   color: inherit;
@@ -34,7 +33,7 @@ a:focus {
   clip: rect(0, 0, 0, 0); border: 0;
 }
 
-/* Hero & images layout fixes */
+
 img {
   max-width: 100%;
   height: auto;
@@ -42,50 +41,49 @@ img {
 }
 
 .hero {
-  padding: 0; /* sin padding para ocupar todo el espacio */
+  padding: 0; 
   background-image: url('../assets/6.-WhatsApp-Image-2022-04-27-at-3.43.35-PM-1.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  min-height: 85vh; /* ocupar la mayor parte de la ventana pero no toda */
-  overflow: hidden; /* recortar cualquier elemento absoluto que sobresalga */
+  min-height: 85vh; 
+  overflow: hidden; 
 }
 
-/* overlay para hacer el fondo semitransparente */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0.32); /* fondo semitransparente (ajustable) */
+  background: rgba(255,255,255,0.32); 
   pointer-events: none;
   z-index: 1;
 }
 
-/* asegurar que el contenido del hero quede encima del overlay */
+
 .hero > * {
   position: relative;
   z-index: 2;
 }
 
-/* Unificar estilos para el título del hero (arriba) y el texto del hero-footer (abajo) */
+
 .hero-text h1,
 .hero-footer h1 {
-  font-size: 1.35rem; /* un pelín más grande */
+  font-size: 1.35rem; 
   margin: 0;
   font-weight: 400;
   line-height: 1.4;
   color: #000;
 }
 
-/* posicionar titulo y pie dentro del hero */
+
 .hero-text {
   position: absolute;
   top: calc(var(--base-spacing) * 1.25);
   left: calc(var(--base-spacing) * 1.25);
   max-width: 48%;
   z-index: 5;
-  color: #000; /* forzar negro */
+  color: #000; 
 }
 
 .hero-footer {
@@ -104,20 +102,20 @@ img {
 .circles-container {
   position: relative;
   width: 100%;
-  height: 360px; /* aumentar para que las imágenes bajadas quepan */
+  height: 360px;
   pointer-events: none;
 }
 
 .circle {
   position: absolute;
-  width: 180px; /* más pequeñas para acercarlas visualmente */
+  width: 180px; 
   text-align: center;
   pointer-events: auto;
 }
 
-/* Posiciones diagonales y encimadas */
+
 .circles-container .circle:nth-child(1) {
-  top: calc(58% - 160px); /* subir/ajustar relativo al nuevo centro */
+  top: calc(58% - 160px);
   right: 10px;
   transform: rotate(-8deg);
   z-index: 6;
@@ -139,7 +137,7 @@ img {
 
 .circle img {
   width: 100%;
-  height: 180px; /* cuadrado para que el border-radius 50% quede redondo */
+  height: 180px; 
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 10px 28px rgba(0,0,0,0.32);
@@ -165,5 +163,5 @@ img {
   .circles-container { height: 660px; }
   .circle { position: relative; width: 90%; margin: 0 auto calc(var(--base-spacing) * 1.2); transform: none !important; top: auto !important; left: auto !important; right: auto !important; }
   .circle img { height: auto; border-radius: 50%; }
-  .hero { min-height: 100vh; } /* en móviles volvemos a 100vh para mejor cobertura */
+  .hero { min-height: 100vh; } 
 }

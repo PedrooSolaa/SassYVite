@@ -13,12 +13,12 @@ $font-size-nombre-colores: 2rem;
 $font-size-texto-normal: 2rem;
 $tamaño: 2.8125rem;
 
-// Fuentes (usa nombre de fuente o fallbacks)
+
 $font-family-encabezado: 'Jacques Francois', serif;
 $font-family-nombre-colores: 'Itim', cursive;
 $font-family-texto-normal: 'Joan', serif;
 
-// Variables CSS como fallback (si usas :root en CSS)
+
 :root {
   --colores-acento-gris: #7f6868;
   --colores-primario-azul: #0501fe;
